@@ -44,9 +44,9 @@ if int(image_bytes) > int(bytes_target):
 		sys.stdout.write(' ►  {bytes}\r'.format(bytes=str(image_bytes)))
 		if image_bytes <= int(bytes_target):
 			print('\n\nFinal file size: ' + str(image_bytes) + ' bytes\n')
-			print('Compressed image save at: ' + '/')
-			final_image = Image.open(new_image)
-			print(final_image.size)
+			print('Compressed image save at: ' + new_image)
+			# final_image = Image.open(new_image)
+			# print(final_image.size)
 			break
 else:
 	print('The size of ' + image_name + ' is already lower than ' + bytes_target + ' bytes')
